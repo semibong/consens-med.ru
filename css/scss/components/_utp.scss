@@ -82,9 +82,10 @@
                 aspect-ratio: 320 / 160;
             }
 
-            img {
+            picture, img {
                 width: 100%;
                 height: 100%;
+                aspect-ratio: inherit;
                 object-fit: cover;
                 object-position: center;
                 border-radius: 1rem;

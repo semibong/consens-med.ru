@@ -1751,9 +1751,10 @@ a:hover {
     aspect-ratio: 320/160;
   }
 }
-.utp__item__image img {
+.utp__item__image picture, .utp__item__image img {
   width: 100%;
   height: 100%;
+  aspect-ratio: inherit;
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
