@@ -1,0 +1,117 @@
+.statistic {
+    margin-bottom: 10rem;
+
+    @media #{$lg} {
+        margin-bottom: 9rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6.8rem;
+
+        @media #{$lg} {
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            gap: 3.5rem;
+            padding-top: 0.5rem;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        padding-left: 10rem;
+
+        @media #{$lg} {
+            padding-left: 6.8rem;
+        }
+
+        &__num {
+            position: absolute;
+            font-weight: 700;
+            font-size: 10rem;
+            line-height: 10rem;
+            background-image: linear-gradient(90deg, $color-primary, $color-active);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            top: 0.5rem;
+            left: 0;
+
+            @media #{$lg} {
+                font-size: 8rem;
+                top: -1.2rem;
+            }
+        }
+
+        &__content {
+            display: flex;
+            justify-content: end;
+            width: 34.8rem;
+            height: 14.8rem;
+            background-color: #fff;
+            clip-path: polygon( 42.264% 0%,85.531% 0.001%,85.531% 0.001%,87.854% 0.443%,90.059% 1.724%,92.114% 3.772%,93.992% 6.52%,95.661% 9.896%,97.093% 13.833%,98.258% 18.26%,99.127% 23.107%,99.67% 28.305%,99.857% 33.785%,99.857% 66.218%,99.857% 66.218%,99.67% 71.698%,99.127% 76.896%,98.258% 81.743%,97.093% 86.17%,95.661% 90.107%,93.991% 93.483%,92.114% 96.231%,90.059% 98.279%,87.854% 99.559%,85.53% 100.001%,0% 100.001%,42.264% 0% );
+            box-sizing: border-box;
+            padding: 3.2rem 2.8rem 0 0;
+
+            @media #{$lg} {
+                align-items: center;
+                width: 28rem;
+                height: 10.6rem;
+                padding: 0 2.6rem 0 0;
+            }
+        }
+
+        &__text {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            text-align: end;
+            text-transform: uppercase;
+            color: $color-text-primary;
+            max-width: 23rem;
+
+            @media #{$lg} {
+                font-size: 1.6rem;
+                line-height: 2rem;
+                max-width: 20rem;
+            }
+        }
+
+        &__shadow {
+            position: absolute;
+            width: 41.5rem;
+            height: 14rem;
+            rotate: -45deg;
+            pointer-events: none;
+            overflow: hidden;
+            top: -5rem;
+            left: -7.9rem;
+
+            @media #{$lg} {
+                rotate: -42deg;
+                top: -7rem;
+                left: -12.6rem;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 31.5rem;
+                height: 17.5rem;
+                background-color: rgba(#022D58, 0.3);
+                border-radius: 50%;
+                filter: blur(25px);
+                transform: translate(-50%, 100%);
+                left: 50%;
+                bottom: 0.5rem;
+
+                @media #{$lg} {
+                    width: 15rem;
+                    height: 10rem;
+                }
+            }
+        }
+    }
+}

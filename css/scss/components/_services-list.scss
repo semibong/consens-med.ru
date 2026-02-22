@@ -1,0 +1,264 @@
+.services-list {
+    position: relative;
+    padding: 6rem 0 11.2rem;
+    background: url(../images/block-bg.jpg) no-repeat center / cover;
+    margin-bottom: 4rem;
+
+    @media #{$lg} {
+        padding: 2.5rem 0 0;
+        background: url(../images/block-bg.jpg) no-repeat center right / cover;
+        margin-bottom: 5rem;
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    &::before {
+        height: 39.3rem;
+        background: linear-gradient(180deg, $color-background, transparent);
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        height: 24.3rem;
+        background: linear-gradient(0deg, $color-background, transparent);
+        left: 0;
+        bottom: 0;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        z-index: 1;
+
+        @media #{$lg} {
+            gap: 1rem;
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: calc(33.33% - 1.666rem);
+        height: auto;
+        aspect-ratio: 460 / 355;
+        background: #05305D linear-gradient(164deg, transparent 0%, #083663 50%, #083663 70%, #2166A8 100%);
+        background-size: 300%;
+        background-position: right;
+        box-sizing: border-box;
+        padding: 3.5rem 2rem 2rem 3.5rem;
+        border-radius: 5rem;
+        transition: all .3s ease-out;
+
+        @media #{$lg} {
+            width: 100%;
+            height: 20rem;
+            aspect-ratio: 347 / 200;
+            background: #05305D linear-gradient(164deg, transparent 0%, #083663 50%, #0e60b0 70%, #2e8de8 100%);
+            background-size: 400%;
+            background-position: right;
+            padding: 1.4rem;
+            border-radius: 2rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0.4rem 6rem 0 rgba(#083663, 0.3);
+            background-position: left;
+
+            @media #{$lg} {
+                background-position: right;
+            }
+
+            &::before {
+                opacity: 1;
+            }
+
+            ul, ul li a {
+                color: #fff;
+            }     
+            
+            .services-list__item__arrow {
+                rotate: 0deg;
+                border-radius: 50%;
+                background-color: #007FFF;
+            }
+        }
+
+        &:first-of-type, &:nth-of-type(6n), &:nth-of-type(7n) {
+            background: #05305D linear-gradient(164deg, transparent 0%, #083663 50%, #0e60b0 70%, #2e8de8 100%);
+            background-size: 400%;
+            background-position: right;
+            transition: all .3s ease-out, background-position .4s ease-out;
+
+            &::after {
+                content: '';
+            }
+
+            &:hover {
+                background-position: left;
+
+                @media #{$lg} {
+                    background-position: right;
+                }
+
+                &::after {
+                    opacity: 0;
+
+                    @media #{$lg} {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: 0.5rem #fff solid;
+            border-radius: inherit;
+            pointer-events: none;
+            transition: all .3s ease-in-out;
+            opacity: 0;
+            top: 0;
+            left: 0;
+
+            @media #{$lg} {
+                content: none;
+            }
+        }
+
+        &::after {
+            content: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../images/services-list-item-decor.png) no-repeat center / cover;
+            box-sizing: border-box;
+            border-radius: inherit;
+            pointer-events: none;
+            transition: all .3s ease-in-out;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+
+            @media #{$lg} {
+                content: '';
+            }
+        }
+
+        &>a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 3rem;
+            line-height: 3rem;
+            color: #fff;
+            min-height: 9.5rem;
+            margin: 0 0 2rem;
+            z-index: 1;
+
+            @media #{$lg} {
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                max-width: 30rem;
+                min-height: 0;
+            }
+
+            &::first-line {
+                font-weight: 700;
+                font-size: 4rem;
+                line-height: 3.5rem;
+                color: #0087FF;
+
+                @media #{$lg} {
+                    font-size: 3rem;
+                    line-height: 3rem;
+                }
+            }
+
+            br {
+                @media #{$lg} {
+                    display: none;
+                }
+            }
+        }
+
+        ul {
+            color: #A2D0FF;
+            padding-left: 1.5rem;
+            margin: 0;
+            transition: all .3s ease-in-out;
+            z-index: 3;
+
+            li {
+                a {
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                    color: #A2D0FF;
+                    transition: all .3s ease-in-out;
+
+                    @media #{$lg} {
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                    }
+
+                    &:hover {
+                        color: #0078EE;
+                    }
+                }
+            }
+        }
+
+        &__arrow {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5.2rem;
+            height: 5.2rem;
+            background-color: rgba(#E9F2FB, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            pointer-events: none;
+            rotate: -45deg;
+            z-index: 1;
+            right: 2.5rem;
+            bottom: 2.5rem;
+            transition: all .3s ease-in-out;
+
+            @media #{$lg} {
+                right: 1.2rem;
+                bottom: 1.2rem;
+            }
+
+            img {
+                width: 2rem;
+                height: 1.6rem;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+}

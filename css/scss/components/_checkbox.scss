@@ -1,0 +1,83 @@
+.checkbox {
+    label {
+        position: relative;
+        display: inline-block;
+        padding-left: 2.1rem;
+        cursor: pointer;
+
+        @media #{$lg} {
+            padding-left: 3rem;
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 1.6rem;
+            height: 1.6rem;
+            transition: all .1s linear;
+            top: 0;
+            left: 0;
+
+            @media #{$lg} {
+                left: 0.5rem;
+            }
+        }
+
+        &::before {
+            background: url(../images/svg/checkbox.svg) no-repeat center / contain;
+        }
+
+        &::after {
+            background: url(../images/svg/checkbox-active.svg) no-repeat center / contain;
+            opacity: 0;
+        }
+
+        &, a {
+            font-size: 1.25rem;
+            line-height: 1.6rem;
+            color: #798FA6;
+
+            @media #{$lg} {
+                font-size: 1.3rem;
+                line-height: 1.4rem;
+            }
+        }
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    input {
+        display: none;
+
+        &:checked + label {
+            &::before {
+                opacity: 0;
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &_white {
+        label {
+            &::before {
+                background: url(../images/svg/checkbox-white.svg) no-repeat center / contain;
+            }
+
+            &::after {
+                background: url(../images/svg/checkbox-active-white.svg) no-repeat center / contain;
+                opacity: 0;
+            }
+
+            &, a {
+                color: #fff;
+            }
+        }
+    }
+}

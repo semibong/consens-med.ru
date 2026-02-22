@@ -1,0 +1,70 @@
+.sidebar {
+    position: fixed;
+    background-color: rgba(#7A9FD9, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 3.5rem 0 0 3.5rem;
+    z-index: 100;
+    top: 28.3rem;
+    right: 0;
+
+    @media #{$lg} {
+        display: none;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        padding: 1.5rem 1rem;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            background-color: transparent;
+            clip-path: inset(0);
+            pointer-events: none;
+        }
+
+        &::before {
+            box-shadow: 1rem 1rem 0 1rem rgba(#7A9FD9, 0.3);
+            border-radius: 0 0 50% 0;
+            top: -5rem;
+            right: 0;
+        }
+
+        &::after {
+            box-shadow: 1rem -1rem 0 1rem rgba(#7A9FD9, 0.3);
+            border-radius: 0 50% 0 0;
+            right: 0;
+            bottom: -5rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border: rgba(#fff, 0.5) 1px solid;
+        border-radius: 50%;
+
+        &:hover {
+            svg path {
+                fill: $color-active;
+            }
+        }
+
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            
+            path {
+                transition: all .1s linear;
+            }
+        }
+    }
+}

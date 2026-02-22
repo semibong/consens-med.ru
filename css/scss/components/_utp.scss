@@ -1,0 +1,94 @@
+.utp {
+    margin-bottom: 13.8rem;
+
+    @media #{$lg} {
+        margin-bottom: 5rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+
+        @media #{$lg} {
+            gap: 1rem;
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: calc(33.33% - 1.666rem);
+        background-color: #fff;
+        box-shadow: 0 0.4rem 6rem 0 rgba($color-text-primary, 0.1);
+        box-sizing: border-box;
+        padding: 2rem 1.2rem 1.2rem;
+        border-radius: 2rem;
+
+        @media #{$lg} {
+            width: 100%;
+            padding: 1.2rem 1.4rem 1.4rem;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: $color-text-primary;
+            text-transform: uppercase;
+            display: inline-flex;
+            flex-direction: column;
+            min-height: 5.7rem;
+            padding-left: 1.1rem;
+            margin: 0 0 2.2rem;
+
+            @media #{$lg} {
+                padding-left: 0;
+            }
+
+            @media #{$md} {
+                font-size: 1.6rem;
+                line-height: 2rem;
+                min-height: 0;
+                margin: 0 0 1rem;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 2.8rem;
+                line-height: 3rem;
+                color: transparent;
+                background-image: linear-gradient(90deg, $color-primary, $color-active);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media #{$md} {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        &__image {
+            display: flex;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 435 / 345;
+            margin-top: auto;
+
+            @media #{$md} {
+                aspect-ratio: 320 / 160;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
