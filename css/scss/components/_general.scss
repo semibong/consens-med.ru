@@ -127,3 +127,40 @@ a {
         margin: 0 1.4rem;
     }
 }
+
+.page-bg {
+    position: absolute;
+    width: 100%;
+    height: 92.8rem;
+    background: url(../images/block-bg.jpg) no-repeat center / cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    @media #{$lg} {
+        display: none;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 39.3rem;
+        background: linear-gradient(0deg, transparent, $color-background);
+        pointer-events: none;
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 24.3rem;
+        background: linear-gradient(0deg, $color-background, transparent);
+        pointer-events: none;
+        left: 0;
+        bottom: 0;
+
+    }
+}
