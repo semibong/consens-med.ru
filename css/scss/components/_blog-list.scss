@@ -5,6 +5,31 @@
         margin-bottom: 4.5rem;
     }
 
+    &:not(.blog-list_allways-slider) {
+        .blog-list {
+            &__slider {
+                .swiper {
+                    &-slide {
+                        @media #{$lg} {
+                            display: flex;
+                            justify-content: center;
+                            width: 100% !important;
+                            margin-right: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:has(+.quiz) {
+        margin-bottom: 1.2rem;
+
+        @media #{$lg} {
+            margin-bottom: 3rem;
+        }
+    }
+
     &__wrapper {
         position: relative;
     }
@@ -29,13 +54,6 @@
             &-slide {
                 transition: opacity .3s linear;
 
-                @media #{$lg} {
-                    display: flex;
-                    justify-content: center;
-                    width: 100% !important;
-                    margin-right: 0 !important;
-                }
-
                 &-prev, &-active + * + * + * {
                     opacity: 0;
 
@@ -46,7 +64,7 @@
 
                 &:nth-of-type(n+4) {
                     @media #{$lg} {
-                        display: none;
+                        display: none !important;
                     }
                 }
             }
@@ -86,6 +104,62 @@
             display: flex;
             max-width: 46rem;
             margin: 0 auto;
+        }
+    }
+
+    &_allways-slider {
+        @media #{$lg} {
+            margin-bottom: 3rem;
+        }
+
+        .blog-list {
+            &__slider {
+                @media #{$lg} {
+                    width: calc(100% + 2.8rem);
+                    margin-left: -1.4rem;
+                }
+
+                .swiper {
+                    @media #{$lg} {
+                        padding-bottom: 4rem;
+                        overflow: hidden;
+                    }
+
+                    &-slide {
+                        @media #{$lg} {
+                            display: flex !important;
+                            justify-content: center;
+                            padding: 0 1.4rem;
+                            box-sizing: border-box;
+                        }
+
+                        .card {
+                            &__title {
+                                @media #{$lg} {
+                                    min-height: 4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .slider {
+                    &-progressbar-item {
+                        @media #{$lg} {
+                            display: block;
+                            width: 32rem !important;
+                            transform: translateY(-2rem);
+                        }
+                    }
+                }
+            }
+
+            &__content {
+                @media #{$lg} {
+                    flex-direction: row;
+                    gap: 0;
+                }
+            }
         }
     }
 }

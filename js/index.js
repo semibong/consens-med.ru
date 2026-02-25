@@ -83,7 +83,7 @@ $(document).ready(function () {
     if ($('.blog-list').length) {
         const blogListSlider = new Swiper('.blog-list__slider .swiper', {
             speed: 1000,
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 25,
             navigation: {
                 prevEl: '.blog-list__slider .slider-arrow-prev',
@@ -93,6 +93,11 @@ $(document).ready(function () {
                 el: '.blog-list__slider .slider-progressbar-item',
                 type: 'progressbar'
             },
+            breakpoints: {
+                993: {
+                    slidesPerView: 3
+                }
+            }
         });
 
         function blogListSliderSwitch() {
@@ -103,7 +108,9 @@ $(document).ready(function () {
             }
         }
 
-        blogListSliderSwitch();
-        $(window).on('resize', blogListSliderSwitch);
+        if (!$('.blog-list').hasClass('blog-list_allways-slider')) {
+            blogListSliderSwitch();
+            $(window).on('resize', blogListSliderSwitch);
+        }
     }
 });

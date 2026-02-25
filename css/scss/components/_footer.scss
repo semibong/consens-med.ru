@@ -1,6 +1,7 @@
 .footer {
     position: relative;
     background: #051D3C url(../images/footer-bg.png) no-repeat center / cover;
+    z-index: 1;
 
     @media #{$lg} {
         background: #051D3C url(../images/footer-bg.png) no-repeat top right / cover;

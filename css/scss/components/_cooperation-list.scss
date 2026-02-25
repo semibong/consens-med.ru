@@ -1,5 +1,7 @@
 .cooperation-list {
+    position: relative;
     margin-bottom: 4rem;
+    z-index: 1;
 
     @media #{$lg} {
         margin-bottom: 7rem;
@@ -119,6 +121,10 @@
             left: 0;
 
             @media #{$lg} {
+                height: 20rem;
+            }
+
+            @media #{$sm} {
                 display: none;
             }
 
@@ -141,5 +147,31 @@
                 }
             }
         }
+    }
+
+    &_page {
+        margin-top: -6rem;
+        margin-bottom: -14rem;
+
+        @media #{$lg} {
+            margin-top: -18.2rem;
+            margin-bottom: 7rem;
+        }
+
+        .cooperation-list {
+            &__wrapper {
+                @media #{$lg} {
+                    padding-top: 18.2rem;
+                }
+            }
+        }
+    }
+}
+.container:has(.title):has(+.cooperation-list_page) > .title {
+    margin-bottom: 13.5rem;
+
+    @media #{$lg} {
+        margin-top: 5.2rem;
+        margin-bottom: 0;
     }
 }
