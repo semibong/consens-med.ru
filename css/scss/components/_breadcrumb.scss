@@ -1,6 +1,8 @@
 .breadcrumb {
+    position: relative;
     padding-top: 1.7rem;
     margin-bottom: 6rem;
+    z-index: 10;
 
     @media #{$lg} {
         padding-top: 1rem;
