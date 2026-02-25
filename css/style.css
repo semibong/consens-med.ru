@@ -2591,9 +2591,15 @@ a:hover {
     margin-bottom: 7rem;
   }
 }
+.cooperation-list_page .cooperation-list__wrapper {
+  padding-top: 29.2rem;
+  margin-top: -29.2rem;
+  min-height: 54rem;
+}
 @media (max-width: 992px) {
   .cooperation-list_page .cooperation-list__wrapper {
     padding-top: 18.2rem;
+    margin-top: 0;
   }
 }
 

@@ -160,13 +160,19 @@
 
         .cooperation-list {
             &__wrapper {
+                padding-top: 29.2rem;
+                margin-top: -29.2rem;
+                min-height: 54rem;
+
                 @media #{$lg} {
                     padding-top: 18.2rem;
+                    margin-top: 0;
                 }
             }
         }
     }
 }
+
 .container:has(.title):has(+.cooperation-list_page) > .title {
     margin-bottom: 13.5rem;
 
