@@ -2605,11 +2605,11 @@ a:hover {
   }
 }
 
-.container:has(.title):has(+ .cooperation-list_page) > .title {
+.title:has(+ .cooperation-list_page) {
   margin-bottom: 13.5rem;
 }
 @media (max-width: 992px) {
-  .container:has(.title):has(+ .cooperation-list_page) > .title {
+  .title:has(+ .cooperation-list_page) {
     margin-top: 5.2rem;
     margin-bottom: 0;
   }
@@ -3133,19 +3133,12 @@ a:hover {
   position: relative;
   min-height: 53.2rem;
   z-index: 1;
+  margin-bottom: -10rem;
 }
 @media (max-width: 992px) {
   .quiz {
     min-height: 0;
     padding-bottom: 11.1rem;
-    margin-bottom: 5rem;
-  }
-}
-.quiz:has(+ .callback) {
-  margin-bottom: -10rem;
-}
-@media (max-width: 992px) {
-  .quiz:has(+ .callback) {
     margin-bottom: 5rem;
   }
 }

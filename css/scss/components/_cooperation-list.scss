@@ -173,7 +173,7 @@
     }
 }
 
-.container:has(.title):has(+.cooperation-list_page) > .title {
+.title:has(+.cooperation-list_page) {
     margin-bottom: 13.5rem;
 
     @media #{$lg} {

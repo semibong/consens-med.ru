@@ -2,19 +2,12 @@
     position: relative;
     min-height: 53.2rem;
     z-index: 1;
+    margin-bottom: -10rem;
 
     @media #{$lg} {
         min-height: 0;
         padding-bottom: 11.1rem;
         margin-bottom: 5rem;
-    }
-
-    &:has(+.callback) {
-        margin-bottom: -10rem;
-
-        @media #{$lg} {
-            margin-bottom: 5rem;
-        }
     }
 
     &::before {
