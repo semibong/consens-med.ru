@@ -1,6 +1,6 @@
 .contacts {
     position: relative;
-    padding-bottom: 12rem;
+    padding-bottom: 2rem;
 
     @media #{$lg} {
         padding-bottom: 0;
@@ -11,7 +11,7 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: 24.3rem;
+        height: 14.3rem;
         background: linear-gradient(0deg, $color-background, transparent);
         pointer-events: none;
         left: 0;
