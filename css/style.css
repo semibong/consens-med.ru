@@ -3954,4 +3954,130 @@ a:hover {
     line-height: 1.8rem;
     margin: 1.8rem 0;
   }
+}
+
+.contacts {
+  position: relative;
+  padding-bottom: 12rem;
+}
+@media (max-width: 992px) {
+  .contacts {
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+}
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 24.3rem;
+  background: linear-gradient(0deg, #F2F3F7, transparent);
+  pointer-events: none;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 992px) {
+  .contacts::before {
+    content: none;
+  }
+}
+.contacts__wrapper {
+  position: relative;
+  display: flex;
+  min-height: 50rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  padding: 4.5rem 3rem 4rem 4.5rem;
+  border-radius: 2rem;
+}
+@media (max-width: 992px) {
+  .contacts__wrapper {
+    flex-direction: column;
+    min-height: 0;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  box-sizing: border-box;
+}
+@media (max-width: 992px) {
+  .contacts__content {
+    gap: 2.5rem;
+    padding: 0 1.4rem;
+    margin-bottom: 3rem;
+  }
+}
+.contacts__item {
+  display: flex;
+  gap: 3rem;
+  width: fit-content;
+}
+@media (max-width: 992px) {
+  .contacts__item {
+    gap: 1rem;
+    width: 100%;
+  }
+}
+.contacts__item:hover svg:not(.stroke) path {
+  fill: #5C9CE6;
+}
+.contacts__item:hover svg.stroke path {
+  stroke: #5C9CE6;
+}
+.contacts__item:hover span {
+  color: #5C9CE6;
+}
+.contacts__item svg {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+@media (max-width: 992px) {
+  .contacts__item svg {
+    margin: -0.3rem;
+  }
+}
+.contacts__item svg path {
+  transition: all 0.2s ease-in-out;
+}
+.contacts__item span {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #2C3E50;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 992px) {
+  .contacts__item span {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+}
+.contacts__map {
+  position: absolute;
+  flex-shrink: 0;
+  width: 95rem;
+  height: 33.5rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  right: 3rem;
+  bottom: 4rem;
+}
+@media (max-width: 992px) {
+  .contacts__map {
+    position: relative;
+    width: 100%;
+    right: auto;
+    bottom: auto;
+  }
+}
+.contacts__map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }/*# sourceMappingURL=style.css.map */
