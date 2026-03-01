@@ -75,4 +75,35 @@
             right: 2rem;
         }
     }
+
+    &-back {
+        font-size: 1.6rem;
+        text-transform: none;
+        color: $color-text-primary;
+        background: transparent;
+        box-shadow: none;
+        padding: 0 3.85rem 0 4.85rem;
+        border: #CED9DF 1px solid;
+        transition: all .2s ease-in-out;
+
+        &:hover, &:active {
+            color: $color-text-primary;
+            background: rgba(#fff, 0.75);
+        }
+
+        &::before {
+            content: none;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1.6rem;
+            height: 1.6rem;
+            background: url(../images/svg/btn-back-arrow.svg) no-repeat center / contain;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 1.8rem;
+        }
+    }
 }

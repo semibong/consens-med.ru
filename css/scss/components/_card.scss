@@ -3,13 +3,21 @@
     max-width: 46rem;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 0 6rem 0 rgba(#000, 0.05);
     box-sizing: border-box;
     padding: 1.2rem 1.2rem 5rem;
     border-radius: 2rem;
+    transition: all .2s ease-in-out;
 
     @media #{$lg} {
         padding: 1.4rem 1.4rem 3rem;
+    }
+
+    &:hover {
+        box-shadow: 0 0 6rem 0 rgba(#000, 0.05);
+
+        .card__title {
+            color: #2174C8;
+        }
     }
 
     &>a {
@@ -124,6 +132,7 @@
         text-overflow: ellipsis;
         min-height: 5rem;
         margin: 0 0 1.7rem;
+        transition: all .2s ease-in-out;
 
         @media #{$lg} {
             font-size: 1.6rem;

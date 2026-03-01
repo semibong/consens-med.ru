@@ -32,12 +32,12 @@
         overflow-y: auto;
 
         &::-webkit-scrollbar {
-            width: 0.2rem;
-            background-color: $color-text-primary;
+            width: 0.3rem;
+            background-color: rgba(#fff, 0.9);
             border-radius: 1rem;
 
             &-thumb {
-                background-color: $color-active;
+                background-color: #2A7DDE;
                 border-radius: 1rem;
             }
         }
