@@ -1,3 +1,25 @@
 .blog {
+    .detail-page {
+        &__content {
+            h3 {
+                line-height: 2.2rem;
+                color: #083663;
+                margin: 4rem 0 0;
 
+                @media #{$lg} {
+                    font-size: 2rem;
+                }
+
+                &:first-child {
+                    margin: 2.2rem 0;
+
+                    @media #{$lg} {
+                        font-size: 1.8rem;
+                        line-height: 1.8rem;
+                        margin: 1.8rem 0;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -185,8 +185,8 @@
                 display: none;
             }
 
-            &:hover {
-                color: $color-secondary;
+            &.active, &:hover {
+                color: #2699FF;
             }
         }
     }

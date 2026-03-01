@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/svg/favicon.svg" type="image/x-icon">
-    <title>CONSENS•MED - Наши кейсы</title>
+    <title>CONSENS•MED - Блог / Статьи</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="js/fancybox/fancybox.css">
@@ -43,8 +43,8 @@
                             </ul>
                         </li>
                         <li><a href="cooperations.html">Форматы сотрудничества</a></li>
-                        <li><a href="cases.html" class="active">Кейсы</a></li>
-                        <li><a href="blogs.html">Блог / Статьи</a></li>
+                        <li><a href="cases.html">Кейсы</a></li>
+                        <li><a href="blogs.html" class="active">Блог / Статьи</a></li>
                     </ul>
                 </nav>
             </div>
@@ -57,8 +57,8 @@
                     <li><a href="about.html">О компании</a></li>
                     <li><a href="services.html">Направления деятельности</a></li>
                     <li><a href="cooperations.html">Форматы сотрудничества</a></li>
-                    <li><a href="cases.html" class="active">Кейсы</a></li>
-                    <li><a href="blogs.html">Блог / Статьи</a></li>
+                    <li><a href="cases.html">Кейсы</a></li>
+                    <li><a href="blogs.html" class="active">Блог / Статьи</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </nav>
@@ -110,87 +110,194 @@
                         <i>&nbsp;&gt;&nbsp;&nbsp;</i>
                     </div>
                     <div class="breadcrumb__item">
-                        <span>Наши кейсы</span>
+                        <span>Блог / Статьи</span>
                     </div>
                 </div>
             </div>
-            <h1 class="title">Наши кейсы</h1>
-            <section class="cases">
-                <div class="cases__content">
-                    <div class="card">
-                        <a href="case.html"></a>
-                        <div class="card__image">
-                            <img src="images/blog-card-img-4.jpg" alt="">
+            <h1 class="title">Наши публикации</h1>
+            <section class="blogs">
+                <form method="get" class="filter">
+                    <div class="filter__content">
+                        <div class="filter__item">
+                            <div class="filter__item__title">дата</div>
+                            <div class="filter__item__inner">
+                                <div class="filter__select">
+                                    <select name="blogs-year" id="blogs-year">
+                                        <option value="2025">2025 год.</option>
+                                        <option value="2024">2024 год.</option>
+                                        <option value="2023">2023 год.</option>
+                                        <option value="2022">2022 год.</option>
+                                        <option value="2021">2021 год.</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card__bar">
-                            <span class="card__date">06.07.2025</span>
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Комплексное оснащение кабинета ультразвуковой диагностики (УЗИ)</h3>
-                            <div class="card__text">В рамках проекта по модернизации диагностической службы был полностью оснащен новый (или модернизирован существующий) кабинет ультразвуковой диагностики. Работы проводились комплексно, «под ключ», и включали в себя следующие этапы</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="case.html"></a>
-                        <div class="card__image">
-                            <img src="images/blog-card-img-5.jpg" alt="">
-                        </div>
-                        <div class="card__bar">
-                            <span class="card__date">06.07.2025</span>
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Комплексное оснащение операционной</h3>
-                            <div class="card__text">В рамках реализации проекта модернизации хирургической службы была выполнена работа по комплексному оснащению операционной. Проект реализован «под ключ» с учетом строгих требований современных хирургических стандартов, правил асептики и антисептики, а также принципов эргономики.</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="case.html"></a>
-                        <div class="card__image">
-                            <img src="images/blog-card-img-6.jpg" alt="">
-                        </div>
-                        <div class="card__bar">
-                            <span class="card__date">06.07.2025</span>
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Обучение персонала</h3>
-                            <div class="card__text">В рамках выполнения плана непрерывного профессионального развития и повышения качества медицинской помощи  был организован и проведен комплекс обучающих мероприятий для медицинского персонала</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="case.html"></a>
-                        <div class="card__image">
-                            <img src="images/blog-card-img-4.jpg" alt="">
-                        </div>
-                        <div class="card__bar">
-                            <span class="card__date">06.07.2025</span>
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Комплексное оснащение кабинета ультразвуковой диагностики (УЗИ)</h3>
-                            <div class="card__text">В рамках проекта по модернизации диагностической службы был полностью оснащен новый (или модернизирован существующий) кабинет ультразвуковой диагностики. Работы проводились комплексно, «под ключ», и включали в себя следующие этапы</div>
+                        <div class="filter__item">
+                            <div class="filter__item__title">темы</div>
+                            <div class="filter__item__inner">
+                                <div class="filter__checkbox">
+                                    <label for="blogs-tag-1">
+                                        <input type="checkbox" name="blogs-tag" id="blogs-tag-1">
+                                        <span>все</span>
+                                    </label>
+                                    <label for="blogs-tag-2">
+                                        <input type="checkbox" name="blog-tag" id="blogs-tag-2" checked>
+                                        <span>Технологии</span>
+                                    </label>
+                                    <label for="blogs-tag-3">
+                                        <input type="checkbox" name="blog-tag" id="blogs-tag-3">
+                                        <span>Менеджмент в медицине</span>
+                                    </label>
+                                    <label for="blogs-tag-4">
+                                        <input type="checkbox" name="blog-tag" id="blogs-tag-4">
+                                        <span>Законодательные изменения</span>
+                                    </label>
+                                    <label for="blogs-tag-5">
+                                        <input type="checkbox" name="blog-tag" id="blogs-tag-5">
+                                        <span>PR в медицине</span>
+                                    </label>
+                                    <label for="blogs-tag-6">
+                                        <input type="checkbox" name="blog-tag" id="blogs-tag-6">
+                                        <span>Кейсы Consens-Med</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <a href="case.html"></a>
-                        <div class="card__image"></div>
-                        <div class="card__bar">
-                            <span class="card__date">06.07.2025</span>
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Комплексное оснащение операционной</h3>
-                            <div class="card__text">В рамках реализации проекта модернизации хирургической службы была выполнена работа по комплексному оснащению операционной. Проект реализован «под ключ» с учетом строгих требований современных хирургических стандартов, правил асептики и антисептики, а также принципов эргономики.</div>
+                </form>
+                <div class="blogs__content">
+                    <div class="blogs__block">
+                        <h3 class="title">2025 год.</h3>
+                        <div class="blogs__items">
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image">
+                                    <img src="images/blog-card-img-1.jpg" alt="">
+                                </div>
+                                <div class="card__bar">
+                                    <div class="card__tag">Технологии</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Как VR-технологии помогают врачам лечить пациентов</h3>
+                                    <div class="card__text">Виртуальная реальность (VR) и дополненная реальность (AR) в сочетании с клиническим опытом врача смогут обеспечить индивидуальное лечение каждого пациента, гарантируя его более быстрое и стабильное выздоровление</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image">
+                                    <img src="images/blog-card-img-2.jpg" alt="">
+                                </div>
+                                <div class="card__bar">
+                                    <div class="card__tag">Менеджмент в медицине</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Профсоюз подвел итоги совместной работы с ОНФ</h3>
+                                    <div class="card__text">Постоянным объектом внимания профильной площадки были актуальные вопросы в сфере кадровой политики отрасли и повышения квалификации специалистов, оплаты труда медработников, штатного нормирования</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image">
+                                    <img src="images/blog-card-img-3.jpg" alt="">
+                                </div>
+                                <div class="card__bar">
+                                    <div class="card__tag">PR в медицине</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Медицинский маркетинг и Юридические аспекты</h3>
+                                    <div class="card__text">Реклама – это информация, распространенная любым способом, в любой форме и с использованием любых средств, адресованная неопределенному кругу лиц и направленная на привлечение внимания к объекту рекламирования</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image">
+                                    <img src="images/blog-card-img-1.jpg" alt="">
+                                </div>
+                                <div class="card__bar">
+                                    <div class="card__tag">Технологии</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Как VR-технологии помогают врачам лечить пациентов</h3>
+                                    <div class="card__text">Виртуальная реальность (VR) и дополненная реальность (AR) в сочетании с клиническим опытом врача смогут обеспечить индивидуальное лечение каждого пациента, гарантируя его более быстрое и стабильное выздоровление</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image"></div>
+                                <div class="card__bar">
+                                    <div class="card__tag">Менеджмент в медицине</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Профсоюз подвел итоги совместной работы с ОНФ</h3>
+                                    <div class="card__text">Постоянным объектом внимания профильной площадки были актуальные вопросы в сфере кадровой политики отрасли и повышения квалификации специалистов, оплаты труда медработников, штатного нормирования</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image">
+                                    <img src="images/blog-card-img-3.jpg" alt="">
+                                </div>
+                                <div class="card__bar">
+                                    <div class="card__tag">PR в медицине</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Медицинский маркетинг и Юридические аспекты</h3>
+                                    <div class="card__text">Реклама – это информация, распространенная любым способом, в любой форме и с использованием любых средств, адресованная неопределенному кругу лиц и направленная на привлечение внимания к объекту рекламирования</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <a href="case.html"></a>
-                        <div class="card__image">
-                            <img src="images/blog-card-img-6.jpg" alt="">
-                        </div>
-                        <div class="card__bar">
-                            <span class="card__date">06.07.2025</span>
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Обучение персонала</h3>
-                            <div class="card__text">В рамках выполнения плана непрерывного профессионального развития и повышения качества медицинской помощи  был организован и проведен комплекс обучающих мероприятий для медицинского персонала</div>
+                    <div class="blogs__block">
+                        <h3 class="title">2024 год.</h3>
+                        <div class="blogs__items">
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image">
+                                    <img src="images/blog-card-img-1.jpg" alt="">
+                                </div>
+                                <div class="card__bar">
+                                    <div class="card__tag">Технологии</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Как VR-технологии помогают врачам лечить пациентов</h3>
+                                    <div class="card__text">Виртуальная реальность (VR) и дополненная реальность (AR) в сочетании с клиническим опытом врача смогут обеспечить индивидуальное лечение каждого пациента, гарантируя его более быстрое и стабильное выздоровление</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image">
+                                    <img src="images/blog-card-img-2.jpg" alt="">
+                                </div>
+                                <div class="card__bar">
+                                    <div class="card__tag">Менеджмент в медицине</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Профсоюз подвел итоги совместной работы с ОНФ</h3>
+                                    <div class="card__text">Постоянным объектом внимания профильной площадки были актуальные вопросы в сфере кадровой политики отрасли и повышения квалификации специалистов, оплаты труда медработников, штатного нормирования</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="blog.html"></a>
+                                <div class="card__image">
+                                    <img src="images/blog-card-img-3.jpg" alt="">
+                                </div>
+                                <div class="card__bar">
+                                    <div class="card__tag">PR в медицине</div>
+                                    <span class="card__date">06.07.2025</span>
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title">Медицинский маркетинг и Юридические аспекты</h3>
+                                    <div class="card__text">Реклама – это информация, распространенная любым способом, в любой форме и с использованием любых средств, адресованная неопределенному кругу лиц и направленная на привлечение внимания к объекту рекламирования</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -248,8 +355,8 @@
                         <li><a href="about.html">О компании</a></li>
                         <li><a href="services.html">Направления деятельности</a></li>
                         <li><a href="cooperations.html">Форматы сотрудничества</a></li>
-                        <li><a href="cases.html" class="active">Кейсы</a></li>
-                        <li><a href="blogs.html">Блог / Статьи</a></li>
+                        <li><a href="cases.html">Кейсы</a></li>
+                        <li><a href="blogs.html" class="active">Блог / Статьи</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
