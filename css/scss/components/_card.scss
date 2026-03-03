@@ -12,7 +12,7 @@
         padding: 1.4rem 1.4rem 3rem;
     }
 
-    &:hover {
+    &:has(>a):hover {
         box-shadow: 0 0 6rem 0 rgba(#000, 0.05);
 
         .card__title {
@@ -158,6 +158,35 @@
             line-height: 1.6rem;
             -webkit-line-clamp: 7;
             min-height: 0;
+        }
+
+        &:has(b),
+        &:has(span),
+        &:has(ul) {
+            font-weight: 400;
+            line-height: 1.8rem;
+            color: $color-text-primary;
+            -webkit-line-clamp: 6;
+
+            @media #{$lg} {
+                line-height: 1.8rem;
+                -webkit-line-clamp: 8;
+            }
+        }
+        
+        b {
+            font-weight: 600;
+        }
+
+        span {
+            font-weight: 600;
+            color: #06559C;
+            display: flex;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 1.3rem;
         }
     }
 }

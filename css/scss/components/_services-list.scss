@@ -261,4 +261,14 @@
             }
         }
     }
+
+    &_page {
+        padding: 0;
+        background: transparent;
+        margin-bottom: 5rem;
+
+        &::before, &::after {
+            content: none;
+        }
+    }
 }

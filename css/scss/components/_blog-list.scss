@@ -95,6 +95,25 @@
             flex-direction: column;
             gap: 1rem;
         }
+
+        &:not(.swiper-wrapper) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+
+            @media #{$lg} {
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .card {
+                width: calc(33.33% - 1.666rem);
+
+                @media #{$lg} {
+                    width: 100%;
+                }
+            }
+        }
     }
 
     .btn-more {
