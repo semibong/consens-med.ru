@@ -4372,6 +4372,7 @@ a:hover {
   }
 }
 .service-callback__request .btn {
+  flex-shrink: 0;
   padding: 0 2.55rem;
 }
 @media (max-width: 992px) {

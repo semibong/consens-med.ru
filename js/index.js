@@ -99,20 +99,6 @@ $(document).ready(function () {
             delay: 10,
             time: 800
         });
-
-        // let statisticNumbers = [];
-        // let maxNumber = 0;
-
-        // $('.statistic__item__num>span').each((i, e) => {
-        //     statisticNumbers.push(+$('.statistic__item__num>span')[i].innerHTML);
-        // });
-        // maxNumber = Math.max(...statisticNumbers);
-        // $('.statistic__item__num>span').each((i, e) => {
-        //     $(e).counterUp({
-        //         delay: 10,
-        //         time: (+$(e)[0].innerHTML/maxNumber) * 1000
-        //     });
-        // });
     }
 
     if ($('.blog-list').length) {
