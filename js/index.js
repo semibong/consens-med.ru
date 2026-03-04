@@ -80,6 +80,20 @@ $(document).ready(function () {
         });
     }
 
+    if ($('.how-we-work').length) {
+        $('.how-we-work__item:not(.how-we-work__item_mob)').on('click', function () {
+            if ($(window).width() < 993) {
+                $(this).toggleClass('active');
+            }
+        });
+
+        $(window).on('resize', function () {
+            if ($(window).width() > 992) {
+                $('.how-we-work__item:not(.how-we-work__item_mob)').removeClass('active');
+            }
+        });
+    }
+
     if ($('.blog-list').length) {
         const blogListSlider = new Swiper('.blog-list__slider .swiper', {
             speed: 1000,
