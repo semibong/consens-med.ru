@@ -2513,6 +2513,7 @@ a:hover {
   padding: 3.5rem 2rem 2rem 3.5rem;
   border-radius: 5rem;
   transition: all 0.3s ease-out;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .services-list__item {
@@ -2536,7 +2537,7 @@ a:hover {
   }
 }
 .services-list__item:hover::before {
-  opacity: 1;
+  border-width: 0.5rem;
 }
 .services-list__item:hover ul, .services-list__item:hover ul li a {
   color: #fff;
@@ -2547,7 +2548,7 @@ a:hover {
   background-color: #007FFF;
 }
 .services-list__item:first-of-type, .services-list__item:nth-of-type(6n), .services-list__item:nth-of-type(7n) {
-  background: #05305D linear-gradient(164deg, transparent 0%, #083663 50%, #0e60b0 70%, #2e8de8 100%);
+  background: #05305D linear-gradient(164deg, transparent 0%, #083663 50%, #083663 70%, #2166A8 100%);
   background-size: 400%;
   background-position: right;
   transition: all 0.3s ease-out, background-position 0.4s ease-out;
@@ -2568,7 +2569,7 @@ a:hover {
 }
 @media (max-width: 992px) {
   .services-list__item:first-of-type:hover::after, .services-list__item:nth-of-type(6n):hover::after, .services-list__item:nth-of-type(7n):hover::after {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 .services-list__item::before {
@@ -2577,11 +2578,10 @@ a:hover {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  border: 0.5rem #fff solid;
+  border: #fff 0 solid;
   border-radius: inherit;
   pointer-events: none;
   transition: all 0.3s ease-in-out;
-  opacity: 0;
   top: 0;
   left: 0;
 }
@@ -2595,12 +2595,11 @@ a:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../images/services-list-item-decor.png) no-repeat center/cover;
+  background: url(../images/services-list-item-bg.jpg) no-repeat center/cover;
   box-sizing: border-box;
   border-radius: inherit;
   pointer-events: none;
   transition: all 0.3s ease-in-out;
-  opacity: 0.5;
   top: 0;
   left: 0;
 }
@@ -2771,7 +2770,10 @@ a:hover {
     border-radius: 2rem 4rem 4rem 4rem;
   }
 }
-.how-we-work__item:hover::before, .how-we-work__item:hover::after {
+.how-we-work__item:hover::before {
+  border-width: 0.5rem;
+}
+.how-we-work__item:hover::after {
   opacity: 1;
 }
 .how-we-work__item:hover .how-we-work__item__title {
@@ -2805,11 +2807,10 @@ a:hover {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  border: #fff 0.5rem solid;
+  border: #fff 0 solid;
   border-radius: inherit;
   pointer-events: none;
   z-index: 1;
-  opacity: 0;
   transition: all 0.4s ease-in-out;
   top: 0;
   left: 0;

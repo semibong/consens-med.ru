@@ -59,6 +59,7 @@
         padding: 3.5rem 2rem 2rem 3.5rem;
         border-radius: 5rem;
         transition: all .3s ease-out;
+        overflow: hidden;
 
         @media #{$lg} {
             width: 100%;
@@ -80,7 +81,7 @@
             }
 
             &::before {
-                opacity: 1;
+                border-width: 0.5rem;
             }
 
             ul, ul li a {
@@ -95,7 +96,7 @@
         }
 
         &:first-of-type, &:nth-of-type(6n), &:nth-of-type(7n) {
-            background: #05305D linear-gradient(164deg, transparent 0%, #083663 50%, #0e60b0 70%, #2e8de8 100%);
+            background: #05305D linear-gradient(164deg, transparent 0%, #083663 50%, #083663 70%, #2166A8 100%);
             background-size: 400%;
             background-position: right;
             transition: all .3s ease-out, background-position .4s ease-out;
@@ -115,7 +116,7 @@
                     opacity: 0;
 
                     @media #{$lg} {
-                        opacity: 0.5;
+                        opacity: 1;
                     }
                 }
             }
@@ -127,11 +128,10 @@
             width: 100%;
             height: 100%;
             box-sizing: border-box;
-            border: 0.5rem #fff solid;
+            border: #fff 0 solid;
             border-radius: inherit;
             pointer-events: none;
             transition: all .3s ease-in-out;
-            opacity: 0;
             top: 0;
             left: 0;
 
@@ -145,12 +145,11 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: url(../images/services-list-item-decor.png) no-repeat center / cover;
+            background: url(../images/services-list-item-bg.jpg) no-repeat center / cover;
             box-sizing: border-box;
             border-radius: inherit;
             pointer-events: none;
             transition: all .3s ease-in-out;
-            opacity: 0.5;
             top: 0;
             left: 0;
 
