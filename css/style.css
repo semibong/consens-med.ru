@@ -2822,7 +2822,7 @@ a:hover {
   border-radius: inherit;
   pointer-events: none;
   z-index: 1;
-  transition: all 0.4s ease-in-out;
+  transition: border-width 0.3s ease-in-out;
   top: 0;
   left: 0;
 }
