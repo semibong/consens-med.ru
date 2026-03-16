@@ -560,15 +560,23 @@
             <div class="callback-popup__form__input">
                 <input type="text" name="callback-popup-name" id="callback-popup-name" placeholder="Ваше Имя">
             </div>
-            <div class="callback-popup__form__block">
-                <div class="callback-popup__form__input">
-                    <input type="tel" name="callback-popup-phone" id="callback-popup-phone" placeholder="Телефон">
-                </div>
-                <button type="submit" class="btn">заказать</button>
+            <div class="callback-popup__form__input">
+                <input type="tel" name="callback-popup-phone" id="callback-popup-phone" placeholder="Телефон">
             </div>
-            <div class="checkbox checkbox_white">
-                <input type="checkbox" id="callback-popup-checkbox">
-                <label for="callback-popup-checkbox">Я согласен(на) на обработку персональных данных в соответствии с <a href="javascript:void(0)">Политикой обработки персональных данных</a>.</label>
+            <div class="callback-popup__captcha">
+                <div class="callback-popup__captcha__item">
+                    <img src="images/captcha.jpg" alt="">
+                </div>
+                <div class="callback-popup__form__input">
+                    <input type="text" name="callback-popup-captcha" id="callback-popup-captcha" placeholder="Код с картинки">
+                </div>
+            </div>
+            <div class="callback-popup__form__block">
+                <button type="submit" class="btn">заказать</button>
+                <div class="checkbox checkbox_white">
+                    <input type="checkbox" id="callback-popup-checkbox">
+                    <label for="callback-popup-checkbox">Я согласен(на) на обработку персональных данных в соответствии с <a href="javascript:void(0)">Политикой обработки персональных данных</a>.</label>
+                </div>
             </div>
         </form>
     </div>
