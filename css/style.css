@@ -3577,7 +3577,12 @@ a:hover {
 @media (max-width: 992px) {
   .service__warning__content, .service__warning__content p {
     font-size: 1.4rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 992px) {
+  .service__warning__content p {
+    margin-bottom: 0.5rem;
   }
 }
 .service__warning__content ul {
@@ -3589,11 +3594,6 @@ a:hover {
   font-size: 1.4rem;
   line-height: 1.8rem;
   color: #2C3E50;
-}
-@media (max-width: 992px) {
-  .service__warning__content ul li {
-    line-height: 1.6rem;
-  }
 }
 .service__warning__image {
   position: absolute;
@@ -3767,7 +3767,7 @@ a:hover {
 @media (max-width: 992px) {
   .service-preview__request > p {
     font-size: 1.4rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
   }
 }
 .service-preview__request > p b {
@@ -3805,7 +3805,7 @@ a:hover {
 @media (max-width: 992px) {
   .service-preview__request__content p {
     font-size: 1.4rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
   }
 }
 .service-preview__request__content .btn {
@@ -3864,7 +3864,7 @@ a:hover {
 @media (max-width: 992px) {
   .service-points_double .service-points__item h3, .service-points_double .service-points__item h3 span {
     font-size: 1.6rem;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
   }
 }
 .service-points_double .service-points__filler {
@@ -3890,12 +3890,8 @@ a:hover {
 @media (max-width: 992px) {
   .service-points__title {
     font-size: 2rem;
-    line-height: 1.8rem;
-    margin: 0;
+    line-height: 2rem;
   }
-}
-.service-points__title:has(span) {
-  line-height: 1.8rem;
 }
 .service-points__title > b {
   font-weight: 600;
@@ -3909,7 +3905,7 @@ a:hover {
 }
 @media (max-width: 992px) {
   .service-points__title span {
-    line-height: 1.6rem;
+    margin-top: 0.5rem;
   }
 }
 .service-points__title span b {
@@ -3942,7 +3938,7 @@ a:hover {
 @media (max-width: 992px) {
   .service-points__subtitle {
     font-size: 1.6rem;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
     margin: 2rem 0 1.5rem;
   }
 }
@@ -4029,11 +4025,6 @@ a:hover {
   line-height: 1.8rem;
   color: #2C3E50;
 }
-@media (max-width: 992px) {
-  .service-points__item__content, .service-points__item__content p {
-    line-height: 1.4rem;
-  }
-}
 .service-points__item__content p {
   text-wrap: balance;
 }
@@ -4057,7 +4048,6 @@ a:hover {
 @media (max-width: 992px) {
   .service-points__item__content h3 {
     font-size: 1.4rem;
-    line-height: 1.4rem;
     margin: 0;
   }
 }
@@ -4090,7 +4080,6 @@ a:hover {
 @media (max-width: 992px) {
   .service-points__note {
     font-size: 1.4rem;
-    line-height: 1.6rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -4227,11 +4216,6 @@ a:hover {
   font-size: 1.4rem;
   line-height: 2rem;
   color: #2C3E50;
-}
-@media (max-width: 992px) {
-  .service-steps__item__content, .service-steps__item__content p {
-    line-height: 1.8rem;
-  }
 }
 .service-steps__item__content h4 {
   font-weight: 600;
@@ -4385,7 +4369,7 @@ a:hover {
 @media (max-width: 992px) {
   .service-callback__title {
     font-size: 2.5rem;
-    line-height: 1.8rem;
+    line-height: 2.5rem;
     margin: 0 0 0.8rem;
   }
 }
@@ -4398,7 +4382,8 @@ a:hover {
 @media (max-width: 992px) {
   .service-callback__title span {
     font-size: 1.8rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
+    margin-top: 0.5rem;
   }
 }
 .service-callback__text {
@@ -4448,7 +4433,6 @@ a:hover {
 @media (max-width: 992px) {
   .service-callback__request p {
     font-size: 1.4rem;
-    line-height: 1.5rem;
   }
 }
 .service-callback__image {
